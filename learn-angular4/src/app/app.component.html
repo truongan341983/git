@@ -1,0 +1,31 @@
+<!--
+  <app-word></app-word>
+
+<input [(ngModel)]="name" [ngStyle]="name.length % 2===0? evenStyle : oddStyle">
+
+<h1>Môn học:{{title1}}</h1>
+
+<input [value]="title1" >
+<input [placeholder]="title1">
+<div *ngIf="false; then hello1 else nohello" [ngStyle]="currenStyle">
+  time:{{title1}}
+</div>
+
+<ng-template #hello1> click on hello</ng-template>
+<ng-template #nohello> click on hello1</ng-template>
+
+
+<div class="circle"></div>
+<div [class]="isTrue ? 'circle':'square' "></div> <!--neu true thi tron, nguoc lai vuong
+<div [class.circle]="!isTrue " [class.square]="isTrue "></div>
+<div [ngClass]="curenclass"></div>
+
+<button (click)="isshow=!isshow">isshow</button>
+<p *ngIf="isshow">is show 123</p>
+
+<app-arrwords></app-arrwords>
+
+
+-->
+<app-parent></app-parent>
+

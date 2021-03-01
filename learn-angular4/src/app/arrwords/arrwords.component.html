@@ -1,0 +1,26 @@
+<div >
+  <ul>
+    <li *ngFor="let subj of arrsubject">
+      <p>{{'subject: '+subj}}</p>
+    </li>
+  </ul>
+</div>
+
+
+<div *ngIf="isshowform">
+  <input placeholder="english" [(ngModel)]="newen">
+  <br>
+  <input placeholder="Vietnam" [(ngModel)]="newviet">
+  <br>
+
+  <button (click)="addword()" >Them tu moi</button>
+</div>
+<button (click)="isshowform = true" *ngIf="!isshowform">them tu moi 1</button>
+
+
+<div *ngFor="let word of arrWords">
+<h1 [ngStyle]="{color:word.memorized ? 'green':'red'}">
+  {{word.en}}
+</h1>
+<p>{{word.vn}}</p>
+</div>
