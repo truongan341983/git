@@ -10,6 +10,9 @@ import { InputComponent } from './input/input.component';
 import { ListPersonComponent } from './list-person/list-person.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { CardComponent } from './card/card.component';
+import { PipeComponent } from './pipe/pipe.component';
+import { PipeCustomeComponent } from './pipe-custome/pipe-custome.component';
 
 
 @NgModule({
@@ -20,7 +23,10 @@ import { ChildComponent } from './child/child.component';
     InputComponent,
     ListPersonComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    CardComponent,
+    PipeComponent,
+    PipeCustomeComponent
   ],
   imports: [
     BrowserModule,
